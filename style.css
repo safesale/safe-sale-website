@@ -1,1 +1,40 @@
-body { font-family: Arial; background: #111; color: #fff; text-align: center; padding-top: 50px; }
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #000;
+  color: #0ff;
+  text-align: center;
+}
+
+/* Responsive CSS for mobile view */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .features li, .how-it-works li {
+    width: 95%;
+    font-size: 0.95rem;
+  }
+
+  .signup form {
+    width: 90%;
+  }
+
+  .signup input {
+    font-size: 1rem;
+  }
+
+  .signup button {
+    font-size: 1rem;
+  }
+
+  .cta-button a {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  header img {
+    width: 150px;
+  }
+}
