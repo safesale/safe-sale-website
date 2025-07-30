@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,62 +9,39 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="scroll-reveal">
-    <img src="safe sale logo.png" alt="Safe Sale Logo" />
-    <h1>SAFE SALE</h1>
-    <p>Secure delivery for peer-to-peer Facebook Marketplace sales</p>
-    <div class="cta-button">
-      <a href="#signup">Join the Waitlist</a>
-    </div>
+  <header>
+    <img src="logo.gif" alt="Safe Sale Logo" />
+    <h1>Safe Sale</h1>
   </header>
 
-  <section class="features scroll-reveal">
-    <h2>Why Choose Safe Sale?</h2>
+  <section class="features">
     <ul>
-      <li>🔐 Escrow-secured transactions</li>
-      <li>📦 Trusted courier hand-off</li>
-      <li>✅ PIN verification at delivery</li>
-      <li>📱 App-integrated tracking</li>
+      <li>Escrow payment protection</li>
+      <li>Courier collection and delivery</li>
+      <li>PIN confirmation system</li>
     </ul>
   </section>
 
-  <section class="how-it-works scroll-reveal">
+  <section class="how-it-works">
     <h2>How It Works</h2>
     <ul>
-      <li>1⃣⃣ Buyer and seller agree on price</li>
-      <li>2⃣⃣ Buyer pays into Safe Sale escrow</li>
-      <li>3⃣⃣ Courier picks up the item</li>
-      <li>4⃣⃣ Buyer receives item + enters secure PIN</li>
-      <li>5⃣⃣ Seller is paid. Done!</li>
+      <li>1. Buyer sends payment to Safe Sale</li>
+      <li>2. Courier collects item from seller</li>
+      <li>3. Buyer confirms delivery with secure PIN</li>
+      <li>4. Seller receives payment</li>
     </ul>
   </section>
 
-  <section class="signup scroll-reveal" id="signup">
-    <h2>Be the First to Know</h2>
-    <p>Enter your email to get early access and updates about our launch.</p>
-    <form action="https://formsubmit.co/ruffyzhome@gmail.com" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Email Address" required />
-      <button type="submit">Notify Me</button>
+  <section class="signup">
+    <h2>Get Early Access</h2>
+    <form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required />
+      <button type="submit">Sign Up</button>
     </form>
   </section>
 
-  <footer class="scroll-reveal">
-    <p>&copy; 2025 Safe Sale. All rights reserved.</p>
-  </footer>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const reveals = document.querySelectorAll('.scroll-reveal');
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('revealed');
-          }
-        });
-      }, { threshold: 0.1 });
-      reveals.forEach(el => observer.observe(el));
-    });
-  </script>
+  <section class="cta-button">
+    <a href="#signup">Join the waitlist</a>
+  </section>
 </body>
 </html>
