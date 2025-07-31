@@ -1,113 +1,54 @@
-
 body {
-  margin: 0;
   font-family: 'Orbitron', sans-serif;
   background-color: #000;
   color: #fff;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-  padding: 2rem 1rem;
-  background: #111;
-  border-bottom: 2px solid #0ff;
+  padding: 2rem;
 }
 
-header h1 {
-  font-size: 3rem;
-  color: #ff00ff;
-  animation: glow 1.5s ease-in-out infinite alternate;
+img {
+  max-width: 200px;
 }
 
-header img {
-  width: 200px;
-  margin-bottom: 1rem;
+.features, .how-it-works, .signup, .cta-button {
+  padding: 2rem;
 }
 
-.features, .how-it-works, .signup {
-  margin: 2rem auto;
-  width: 80%;
-  max-width: 600px;
-}
-
-.features ul, .how-it-works ul {
+ul {
   list-style: none;
   padding: 0;
 }
 
-.features li, .how-it-works li {
-  background: #222;
-  margin: 1rem 0;
-  padding: 1rem;
-  border-left: 5px solid #0ff;
-}
-
-.signup input {
-  padding: 0.8rem;
-  font-size: 1.2rem;
-  width: 70%;
-  max-width: 300px;
-  margin: 0.5rem 0;
+.signup input[type="email"] {
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
 }
 
 .signup button {
-  padding: 0.8rem 2rem;
-  font-size: 1.2rem;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 1rem;
   background: #0ff;
-  border: none;
   color: #000;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
 .cta-button a {
-  display: inline-block;
-  background: #ff00ff;
-  color: #fff;
-  padding: 0.8rem 2rem;
+  color: #0ff;
   text-decoration: none;
-  margin-top: 2rem;
   font-size: 1.2rem;
-  animation: glow 1.5s ease-in-out infinite alternate;
 }
 
-@keyframes glow {
-  from {
-    text-shadow: 0 0 5px #fff, 0 0 10px #ff00ff, 0 0 20px #ff00ff;
-  }
-  to {
-    text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
-  }
-}
-
-/* Responsive CSS for mobile view */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
-  }
-
-  .features li, .how-it-works li {
-    width: 95%;
-    font-size: 0.95rem;
-  }
-
-  .signup form {
-    width: 90%;
-  }
-
-  .signup input {
-    font-size: 1rem;
-  }
-
-  .signup button {
-    font-size: 1rem;
-  }
-
-  .cta-button a {
-    font-size: 1rem;
-    padding: 0.6rem 1.2rem;
-  }
-
-  header img {
-    width: 150px;
-  }
+.thanks-container {
+  margin-top: 10rem;
 }
